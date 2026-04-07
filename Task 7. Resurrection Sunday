@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int year =2026;
+    printf("Resurrection Sunday Reminder\n");
+    printf("Year:%d\n",year);
+    printf("Check church calendar for exact date.\n");
+    printf("\nQuestions for Reflection:\n");
+    printf("1.What is Easter?\n");
+    printf("2.Why is Resurrection Sunday important?\n");
+    printf("3.What did Jesus' resurrection mean for Christians?\n");
+    printf("4.What happened on Good Friday?\n");
+    printf("5.How do Christians celebrate Easter?\n");
+    printf("6.What lessons can we learn from Jesus' resurrection?\n");
+    return 0;
+}
