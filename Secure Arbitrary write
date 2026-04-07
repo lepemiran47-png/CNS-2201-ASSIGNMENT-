@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int safe_var=10;
+    int input;
+   printf("Initial value of safe_var: %d\n", safe_var);
+   printf("Enter new value for safe_var: ");
+    scanf("%d",&input);
+    safe_var = input;
+    printf("Updated value of safe_var: %d\n", safe_var);
+    return 0;
+}
