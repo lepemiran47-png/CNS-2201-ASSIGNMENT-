@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int year=2026;
+    cout<<"Resurrection Sunday Reminder\n";
+    cout<<"Year:"<<year<<endl;
+    cout<<"Check church calendar for exact date.\n";
+    cout<<"\nQuestions for Reflection:\n";
+    cout<<"1.What is Easter?\n";
+    cout<<"2.Why is Resurrection Sunday important?\n";
+    cout<<"3.What did Jesus' resurrection mean for Christians?\n";
+    cout<<"4.What happened on Good Friday?\n";
+    cout<<"5.How do Christians celebrate Easter?\n";
+    cout<<"6.What lessons can we learn from Jesus' resurrection?\n";
+    return 0;
+}
