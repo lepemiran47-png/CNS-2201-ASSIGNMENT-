@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int safe_var = 10;
+    int *ptr;
+    printf("Initial value of safe_var: %d\n",safe_var);
+    printf("Enter memory address (in hex):");
+    scanf("%p",&*ptr); 
+    printf("Enter value to write:");
+    scanf("%d",*ptr);
+    printf("Updated value of safe_var: %d\n",safe_var);
+    return 0;
+}
