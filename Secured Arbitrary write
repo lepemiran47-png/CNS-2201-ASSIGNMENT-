@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int safeVar =20;
+    int input;
+    cout <<"Initial value:"<<safeVar <<endl;
+   cout<<"Enter new value:";
+    cin>>input;
+    safeVar =input;
+    cout<<"Updated value:"<<safeVar<<endl;
+    return 0;
+}
