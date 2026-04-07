@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int safeVar=20;
+    int*ptr;
+ cout<<"Initial value:"<<safeVar <<endl;
+ cout<<"Enter memory address:";
+  cin>>*ptr;
+ cout<<"Enter value: ";
+    cin>>*ptr;
+ cout<<"Updated value: "<<safeVar<< endl;
+return 0;
+}
