@@ -1,0 +1,31 @@
+#include <iostream>
+#include <iomanip>
+#include <openssl/des.h>
+#include <openssl/aes.h>
+using namespace std;
+
+int main() {
+    // DES
+    DES_cblock key = "12345678", in = "HELLO123", out;
+    DES_key_schedule ks;
+    DES_set_key_unchecked(&key, &ks);
+    DES_ecb_encrypt(&in, &out, &ks, DES_ENCRYPT);
+
+    cout << "DES: ";
+    for(int i=0;i<8;i++)
+        cout << hex << setw(2) << setfill('0') << (int)out[i];
+    cout << endl;
+
+    // AES
+    unsigned char aes_key[16] = "1234567890123456";
+    unsigned char ain[16] = "HELLOAES1234567", aout[16];
+    AES_KEY ak;
+    AES_set_encrypt_key(aes_key, 128, &ak);
+    AES_encrypt(ain, aout, &ak);
+
+    cout << "AES: ";
+    for(int i=0;i<16;i++)
+        cout << hex << setw(2) << setfill('0') << (int)aout[i];
+
+    return 0;
+}
